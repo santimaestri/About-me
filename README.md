@@ -1,4 +1,4 @@
-# 👋 Hola, soy Santiago Maestri
+# 👋 ¡Hola! Soy Santiago Maestri
 
 ## 🙋 Sobre mí
 Periodista de datos y emprendedor en e-commerce.  
