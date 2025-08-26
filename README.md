@@ -19,9 +19,10 @@ Experiencia en medios de Argentina, Latinoamérica y proyectos globales.
 — Narrativas basadas en datos  
 
 **💼 Negocio**  
-— Comercio electrónico & gestión de startups  
-— Experto en Mercado Libre y plataformas de e-commerce  
-— Profundo conocimiento del retail tradicional  
+— Marketing de afiliación
+- Comercio electrónico & gestión de startups  
+— Mercado Libre y plataformas de e-commerce  
+— Retail tradicional  
 
 **🌍 Comercio exterior**  
 — Sourcing y producción en China  
