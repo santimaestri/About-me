@@ -30,7 +30,7 @@ Experiencia en medios de Argentina, Latinoamérica y proyectos globales.
 ---
 
 ## 🚀 Experiencia
-— **Emprendedor** — Gestión de startups, empresas de e-commerce, retail y repuestos de celulares.  
+— **Emprendedor** — Gestión de startups, empresas de e-commerce, retail y tecnología.  
 — **Pionero en retail Apple en Argentina** — Experiencia temprana en la marca más influyente de tecnología del mundo.  
 — **Periodismo de datos** — Desarrollo de secciones y contenidos para grandes medios.  
 — **Estrategia de monetización en medios** — Proyectos de marketing de afiliación, branded content y optimización editorial.
