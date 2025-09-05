@@ -17,7 +17,11 @@
     body{margin:0;font-family:ui-sans-serif,system-ui,-apple-system,Segoe UI,Roboto,Helvetica,Arial;background:var(--bg);color:var(--text);line-height:1.65}
     .container{max-width:920px;margin:0 auto;padding:32px 20px}
     .hero{display:flex;gap:18px;align-items:center;padding:22px 20px;border:1px solid var(--ring);border-radius:18px;background:linear-gradient(135deg, color-mix(in oklab,var(--accent) 15%, transparent), color-mix(in oklab,var(--accent2) 12%, transparent));}
-    .avatar{width:64px;height:64px;border-radius:50%;display:grid;place-items:center;background:radial-gradient(circle at 30% 30%, var(--accent), var(--accent2));font-size:28px}
+
+    /* Avatar con imagen circular */
+    .avatar { width: 64px; height: 64px; border-radius: 50%; overflow: hidden; flex-shrink: 0; }
+    .avatar img { width: 100%; height: 100%; object-fit: cover; }
+
     h1{margin:0;font-size:clamp(24px,4vw,34px)}
     .tagline{color:var(--muted);margin-top:4px}
     .chips{display:flex;flex-wrap:wrap;gap:8px;margin-top:10px}
@@ -39,78 +43,38 @@
     .item-title{font-weight:700}
     .item-sub{color:var(--muted);font-size:14px}
 
+    /* Botonera */
+    .buttons { margin-top: 14px; display: flex; flex-wrap: wrap; gap: 10px; }
+    .btn { display:inline-block; padding:8px 16px; border-radius:8px; font-size:14px; font-weight:600; text-decoration:none; transition:background .2s ease-in-out; color:#fff; }
+    .btn-linkedin { background:#0a66c2; }
+    .btn-linkedin:hover { background:#004182; }
+    .btn-email { background:#dc2626; }
+    .btn-email:hover { background:#991b1b; }
+
     .footer{margin-top:28px;color:var(--muted);border-top:1px solid var(--ring);padding-top:18px;font-size:14px;text-align:center}
     .footer a{color:var(--accent);text-decoration:none}
     .footer a:hover{text-decoration:underline}
-    .btn-linkedin {
-  display: inline-block;
-  margin-top: 14px;
-  padding: 8px 16px;
-  border-radius: 8px;
-  font-size: 14px;
-  font-weight: 600;
-  background: #0a66c2; /* Azul LinkedIn */
-  color: #fff;
-  text-decoration: none;
-  transition: background 0.2s ease-in-out;
-}
-.btn-linkedin:hover {
-  background: #004182;
-}
-
-.avatar {
-  width: 64px;
-  height: 64px;
-  border-radius: 50%;
-  overflow: hidden;
-  flex-shrink: 0;
-}
-.avatar img {
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-}
-
-.btn-linkedin {
-  display: inline-block;
-  margin-top: 14px;
-  padding: 8px 16px;
-  border-radius: 8px;
-  font-size: 14px;
-  font-weight: 600;
-  background: #0a66c2; /* Azul LinkedIn */
-  color: #fff;
-  text-decoration: none;
-  transition: background 0.2s ease-in-out;
-}
-.btn-linkedin:hover {
-  background: #004182;
-}
-
   </style>
 </head>
 <body>
   <div class="container">
-<div class="hero">
-  <div class="avatar">
-    <img src="https://media.licdn.com/dms/image/v2/D4D03AQEfBW3Ib8COTQ/profile-displayphoto-shrink_400_400/B4DZct8WbFGgAg-/0/1748822485271?e=1759968000&v=beta&t=t22JNIR3J-SmXjXxMmLbiEDxcGbv-0MhFb9AtSNrXJU" alt="Foto de Santiago Maestri">
-  </div>
-  <div>
-    <h1>¡Hola! Soy Santiago Maestri</h1>
-    <div class="chips" aria-label="áreas clave">
-      <span class="chip">📊 Datos</span>
-      <span class="chip">📰 Medios</span>
-      <span class="chip">🏢 Empresas</span>
-      <span class="chip">🌍 Comercio Exterior</span>
-      <span class="chip">✍️ Periodismo</span>
-    </div>
 
-    <!-- Botón de LinkedIn -->
-    <a href="https://www.linkedin.com/in/santiagomaestri/" target="_blank" class="btn-linkedin">
-      🔗 Conectemos en LinkedIn
-    </a>
-  </div>
-</div>
+    <!-- HERO -->
+    <div class="hero">
+      <div class="avatar">
+        <img src="https://media.licdn.com/dms/image/v2/D4D03AQEfBW3Ib8COTQ/profile-displayphoto-shrink_400_400/B4DZct8WbFGgAg-/0/1748822485271?e=1759968000&v=beta&t=t22JNIR3J-SmXjXxMmLbiEDxcGbv-0MhFb9AtSNrXJU" alt="Foto de Santiago Maestri" loading="eager" decoding="async">
+      </div>
+      <div>
+        <h1>¡Hola! Soy Santiago Maestri</h1>
+        <div class="chips" aria-label="áreas clave">
+          <span class="chip">📊 Datos</span>
+          <span class="chip">📰 Medios</span>
+          <span class="chip">🏢 Empresas</span>
+          <span class="chip">🌍 Comercio Exterior</span>
+          <span class="chip">✍️ Periodismo</span>
+        </div>
+        </div>
+    </div>
 
     <section>
       <p style="font-size:1.1rem;">Me enfoco en la creación, comercialización de productos y contenidos a partir de datos en plataformas con audiencias masivas. Utilizo inteligencia artificial y fuentes abiertas de datos para mejorar y precisar en los resultados. Además, creo estrategias de monetización para así incrementar los contenidos de calidad que diferencian.</p>
@@ -219,7 +183,29 @@
       </div>
     </section>
 
-    <div class="footer">© 2025 Santiago Maestri — <a href="https://www.linkedin.com/in/santiagomaestri/" target="_blank">LinkedIn</a></div>
+        <section>
+      <h2>🤝 Contacto</h2>
+      <div class="buttons" role="group" aria-label="contacto y redes">
+        <a class="btn btn-linkedin" href="https://www.linkedin.com/in/santiagomaestri/" target="_blank" rel="noopener noreferrer">🔗 Conectemos en LinkedIn</a>
+        <a id="email-link" class="btn btn-email" href="#">📧 Escríbeme</a>
+      </div>
+      <noscript>
+        <p style="color:var(--muted);font-size:14px;">Email: santiago [at] reviu [dot] com [dot] ar</p>
+      </noscript>
+    </section>
+
+    <div class="footer">© 2025 Santiago Maestri</div>
   </div>
+
+  <script>
+  (function(){
+    // Ligera ofuscación del email para desalentar scrapers básicos
+    var u = "santiago";
+    var d = ["reviu","com","ar"].join(".");
+    var a = u + "@" + d;
+    var link = document.getElementById("email-link");
+    if(link){ link.href = "mailto:" + a + "?subject=Contacto%20desde%20tu%20web"; }
+  })();
+  </script>
 </body>
 </html>
