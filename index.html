@@ -57,12 +57,44 @@
 .btn-linkedin:hover {
   background: #004182;
 }
+
+.avatar {
+  width: 64px;
+  height: 64px;
+  border-radius: 50%;
+  overflow: hidden;
+  flex-shrink: 0;
+}
+.avatar img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.btn-linkedin {
+  display: inline-block;
+  margin-top: 14px;
+  padding: 8px 16px;
+  border-radius: 8px;
+  font-size: 14px;
+  font-weight: 600;
+  background: #0a66c2; /* Azul LinkedIn */
+  color: #fff;
+  text-decoration: none;
+  transition: background 0.2s ease-in-out;
+}
+.btn-linkedin:hover {
+  background: #004182;
+}
+
   </style>
 </head>
 <body>
   <div class="container">
 <div class="hero">
-  <div class="avatar" aria-hidden="true">SM</div>
+  <div class="avatar">
+    <img src="https://media.licdn.com/dms/image/v2/D4D03AQEfBW3Ib8COTQ/profile-displayphoto-shrink_400_400/B4DZct8WbFGgAg-/0/1748822485271?e=1759968000&v=beta&t=t22JNIR3J-SmXjXxMmLbiEDxcGbv-0MhFb9AtSNrXJU" alt="Foto de Santiago Maestri">
+  </div>
   <div>
     <h1>¡Hola! Soy Santiago Maestri</h1>
     <div class="chips" aria-label="áreas clave">
